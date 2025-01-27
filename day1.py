@@ -5,35 +5,17 @@
 
 
 #Indentation
-if 5 > 4:
-    print("5 is greater than 4")
-else:
-    print("4 is greater than 5")
-
 #Variables and Data Types
-integer = 10
-floating = 10.5
-string = "Hello World"
-boolean = True
-list = ["true",2,3,4,5]
-tuple = (1,2,3,4,5)
-set = {1,2,3,4,5}
-dictionary = {"name":"John","age":30}
-print(integer)
-print(floating)
-print(string.lower())
-print(boolean)
-print(list)
-print(tuple)
-print(set)
-print(dictionary)
+number = 7.7
+
 
 #Type Conversion
-name = int("7")
-name = float(name)
-print(name)
-print(type(name))
+print("Original type:", number)
+converted = int(number)
+print("Type:", str(converted))
+
 #Operators
+
 #Arithmetic Operators +, -, *, /, %, **, //
 #Comparison Operators ==, !=, >, <, >=, <=
 #Logical Operators and, or, not
