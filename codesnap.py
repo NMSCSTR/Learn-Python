@@ -1,11 +1,11 @@
 
 #Is The Triangle Equilateral? Activity
-# x = int(input("Enter x: "))
-# y = int(input("Enter y: "))
-# z = int(input("Enter z: "))
+x = int(input("Enter x: "))
+y = int(input("Enter y: "))
+z = int(input("Enter z: "))
 
-# if x == y and y == z:
-#     print("Triangle is equilateral.")
+if x == y and y == z:
+    print("Triangle is equilateral.")
 
 # Same Sign Activity
 
@@ -27,3 +27,12 @@ if result:
     print("All numbers are equal.")
 else:
     print("Not all numbers are equal.")
+
+
+#Voting Age Activity
+age = int(input("Enter your age: "))
+
+if age >= 18:
+    print("You are eligible to vote.")
+else:
+    print("You are not eligible to vote.")
