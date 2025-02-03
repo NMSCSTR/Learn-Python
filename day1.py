@@ -2,6 +2,7 @@
 #Comments
 #Indentation
 #Variables and Data Types
+#Printing
 #Type Conversion
 #Operators
 #Arithmetic Operators +, -, *, /, %, **, //
@@ -11,3 +12,5 @@
 #Collections List, Tuple, Set, Dictionary
 #Control Structures if, elif, else, for, while
 #Loops
+
+

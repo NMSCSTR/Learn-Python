@@ -1,11 +1,11 @@
 #FIND THE ERROR
 """
-name = John
+name = "John"
 print("Hello" + name)
 
-numbers = [1, 2, 3, 4, 5]
-for i in range(numbers):
-    print i
+
+for i in range(5):
+    print (i)
 
 if x = 10:
     print("x is 10")
@@ -15,9 +15,9 @@ if x = 10:
 #Predict the Output
 """
 x = 5
-y = "5"
-print(x * 2)
-print(y * 2)
+y = "5" 
+print(x * 2) //10
+print(y * 2) //55
 
 """
 
