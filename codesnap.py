@@ -36,3 +36,17 @@ if age >= 18:
     print("You are eligible to vote.")
 else:
     print("You are not eligible to vote.")
+
+
+
+#Equal Numbers
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+num3 = int(input("Enter third number: "))
+
+result = num1 == num2 == num3
+
+if result:
+    print("All numbers are equal.")
+else:
+    print("Not all numbers are equal.")
