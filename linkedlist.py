@@ -7,14 +7,14 @@ class Node:
 class LinkedList:
     """A singly linked list."""
     def __init__(self):
-        self.head = None  # Initialize the head of the list
+        self.head = None # Initialize the head of the list
 
     def append(self, data):
         """Add a node to the end of the linked list."""
         new_node = Node(data)
         if not self.head:  # If the list is empty
             self.head = new_node
-        else:
+        else: 
             current = self.head
             while current.next:  # Traverse to the end of the list
                 current = current.next

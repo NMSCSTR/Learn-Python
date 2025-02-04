@@ -5,7 +5,7 @@ print("Hello" + name)
 
 
 for i in range(5):
-    print (i)
+    print i
 
 if x = 10:
     print("x is 10")
