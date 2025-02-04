@@ -11,7 +11,7 @@ print(array)
 
 # Adding elements
 array.append(60) #add at the end 
-array.insert(2, 15)
+array.insert(2, 15) # Inserts at index 2
 print(array)
 
 #Removing elements
