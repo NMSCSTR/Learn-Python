@@ -59,3 +59,41 @@ Example: matrix.append([10, 11, 12]) adds a new row to the matrix.
 
 # 2D lists can grow in complexity, and accessing elements might take more time compared to simple 1D lists, especially if the matrix is large.
 # When using large 2D lists (e.g., for matrices or images), consider more efficient structures such as NumPy arrays for better performance.
+
+# 2D List Example: Matrix
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+# Accessing elements
+print("Element at row 1, column 2:", matrix[0][1])  # Output: 2
+
+# Modifying an element
+matrix[1][1] = 100
+print("Modified Matrix:")
+for row in matrix:
+    print(row)
+
+# Traversing through a 2D list (Matrix)
+print("\nTraversing the matrix:")
+for i in range(len(matrix)):  # Loop through rows
+    for j in range(len(matrix[i])):  # Loop through columns
+        print(f"Element at ({i}, {j}):", matrix[i][j])
+
+# Adding a new row
+matrix.append([10, 11, 12])
+print("\nMatrix after adding a new row:")
+for row in matrix:
+    print(row)
+
+# Example of a 2D list representing a Tic-Tac-Toe board
+tic_tac_toe_board = [
+    ["X", "O", "X"],
+    ["O", "X", "O"],
+    ["X", "O", "X"]
+]
+print("\nTic-Tac-Toe Board:")
+for row in tic_tac_toe_board:
+    print(row)
