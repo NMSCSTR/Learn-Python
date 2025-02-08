@@ -30,18 +30,19 @@ Shape of a 2D List: The shape is represented by the number of rows and the numbe
 
 # Creating a 2D List:
 # A 2D list can be created in several ways, such as initializing it manually with nested lists, using loops, or using list comprehensions.
-matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+# matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 
 # Indexing and Accessing Elements in 2D Lists:
 # Access elements using two indices: matrix[row][column].
-print(matrix[1][2])
+# print(matrix[1][2])
 
 # Traversing a 2D List:
 # Use nested loops (or list comprehensions) to traverse through all the elements in a 2D list.
 # Example: A nested loop can be used to access each element in a row and print it.
-for num in matrix:
-    for n in num:
-        print(n)
+
+# for num in matrix:
+#     for n in num:
+#         print(n)
 
 
 # Manipulating Elements in 2D Lists:
