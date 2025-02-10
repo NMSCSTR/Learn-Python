@@ -2,7 +2,7 @@
 CREATE YOUR OWN FUNCTION INLINE WITH 
 THE DIFFERENTTYPES OF FUNCTION BELOW
 """
-# NAME OF OUR SCHOOL DEAN
+# Our school dean's name
 # Function with no parameter
 # Function with parameters
 # Function with default parameters
