@@ -4,6 +4,7 @@ tic_tac_toe = [
     [None, None, None], #1
     [None, None, None]  #2
 ]
+
 # X X O - first row
 # O X O - second row
 # 0 X X - third row
