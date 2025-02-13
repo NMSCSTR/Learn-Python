@@ -23,12 +23,13 @@ three_d_list = [
 ]
 
 # Accessing an element
-print(three_d_list[1][2][1])  
+# print(three_d_list[1][0][3]) #16  
 
 for matrix in three_d_list:
     for row in matrix:
-        print(row)  
-    print() 
+        for elements in row:
+            print(elements) 
+print() #New line
 
 # Task 1: Create a 3D List
 """
@@ -38,8 +39,7 @@ for matrix in three_d_list:
 # 4 rows per matrix
 # 5 columns per row
 """
-
-#Task 2: Access and Modify Elements
+#Task 2: Access and Modify Elements and Iterate those elements
 """
 Access and print the element in the 2nd matrix, 3rd row, and 4th column.
 Modify the value in the 1st matrix, 2nd row, and 5th column to 999.
