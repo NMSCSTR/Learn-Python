@@ -1,15 +1,9 @@
-credentials = [
+credentials = [ # list of dictionary
     {"User": "rhondel", "Password": "12345"},
     {"User": "john", "Password": "doe"}
 ]
-creds = ["sample_user","sample_password"]
-# key value pairs credentials["User"]
-#list - indexing [0][1]
-
-#block of code with an specific task
-
 def error_message(user):
-    return f"Error Login! \nUser {user} not found." # specific task in every function
+    return f"Error Login! \nUser {user} not found." 
 
 def success_message(user):
     return f"Login successfully! \nWelcome {user}"
@@ -17,14 +11,13 @@ def success_message(user):
 username = input("Username: ") # rhondel
 password = input("Password: ") # 12345
 
+found = False #
 
-found = False
 for cred in credentials: # Iterating
-    if username == cred["User"] and password == cred["Password"]:
-        print(success_message(username))
+    if username == cred["User"] and password == cred["Password"]: # ga exist username ug password ge input result is true
+        print(success_message(username)) # rhondel
         found = True
-        break
-
+        break # to stop execution
 if not found:
     print(error_message(username))
 
