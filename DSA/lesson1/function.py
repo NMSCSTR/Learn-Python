@@ -1,4 +1,10 @@
-students = ["Alice", "Bob", "Charlie"]
+marks = int(input("Enter grade \n"))
 
-for i in range(len(students)):
-    print(i)
+if marks >= 99:
+    grade = "Excellent"
+elif marks >= 90:
+    grade = "A++"
+else:
+    grade ="Fail"
+
+print(grade)
