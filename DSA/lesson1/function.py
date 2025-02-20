@@ -1,10 +1,12 @@
-marks = int(input("Enter grade \n"))
+#Function that can has a para with default value Jake and passed value john using input use f string format.
+def welcome_names(name="Jake"):
+    name2=input("Enter the name:")
+    print(f"Welcome {name} and {name2}")
+welcome_names()
+    
 
-if marks >= 99:
-    grade = "Excellent"
-elif marks >= 90:
-    grade = "A++"
-else:
-    grade ="Fail"
 
-print(grade)
+#output 
+#Welcome John and Jake!
+
+#Write a function that will ask 4 numbers and add them all
