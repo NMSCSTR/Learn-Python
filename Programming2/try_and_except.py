@@ -1,14 +1,12 @@
+import pdb  # Importing the built-in Python debugger module
 
-
-
-# Defining a custom exception by creating a class that inherits from Exception
-class NegativeNumberError(Exception):
-    pass  # 'pass' means this class inherits everything from Exception without adding anything new
+def calculate(num):
+    pdb.set_trace()  # Starting the debugger at this point
+    result = 10 / num  # Calculating the division
+    return result  # Returning the result
 
 try:
-    num = int(input("Enter a positive number: "))  # Accepting input from the user
-    if num < 0:  # Checking if the number is negative
-        raise NegativeNumberError("Negative numbers are not allowed.")  # Raising custom exception
-    print("Valid number:", num)  # Printing the valid number if no error occurs
-except NegativeNumberError as e:  # Catching the custom exception
-    print(e)  # Printing the custom error message
+    number = int(input("Enter a number: "))  # Taking input from user
+    print(calculate(number))  # Calling the function and printing the result
+except ZeroDivisionError:  # Catching ZeroDivisionError
+    print("Cannot divide by zero.")
