@@ -1,9 +1,5 @@
-class Car:
-    def __init__(self, brand, model, year):
-        self.brand = brand
-        self.model = model
-        self.year = year
-
-# Create an object
-car1 = Car("Honda", "Civic", 2009)
-print(car1.model)
+class School():
+    def __init__(self, name, location, school_type):
+        self.name = name
+        self.location = location
+        self.school_type = school_type
