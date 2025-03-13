@@ -1,43 +1,48 @@
-class Book:
-    def __init__(self, title, author, year):
-        self.title = title
-        self.author = author
+class Car:
+    def __init__(self, brand, model, year, price):
+        # Setting attributes
+        self.brand = brand
+        self.model = model
         self.year = year
+        self.price = price
     # Getters
-    def get_title(self):
-        print(f"Title: {self.title}")
+    def get_brand(self):
+        print(f"Car Brand: {self.brand}")
 
-    def get_author(self):
-        print(f"Author: {self.author}")
+    def get_model(self):
+        print(f"Car Model: {self.model}")
 
     def get_year(self):
         print(f"Year: {self.year}")
-    # Setters
-    def set_title(self, title):
-        self.title = title
 
-    def set_author(self, author):
-        self.author = author
+    def get_price(self):
+        print(f"Car Price: {self.price}")
 
-    def set_year(self, year):
-        self.year = year # New value or object
+    def display_info(self):
+        print(f"Car brand : {self.brand} the model of this car was {self.model} price will be {self.price} and created in year {self.year}")
 
-book1 = Book("Alice in the wonderland" , "Alegrado", 2008)
-book2 = Book("Ben10" , "Kirou", 2001)
+# Creating objects
+car1 = Car("Toyota", "Vios", 2003, "1.5M")
+car2 = Car("Supra", "Mk5", 2010, "10.5M")
+car3 = Car("Nissan", "GTR Skyline", 2005, "25M")
 
-# Getters
-book1.get_title()
-book2.get_title()
+car1.get_brand()
+car1.get_model()
+car1.get_price()
+car1.get_year()
+car1.display_info()
 print()
-book1.get_author()
-book2.get_author()
+car2.get_brand()
+car2.get_model()
+car2.get_price()
+car2.get_year()
+car2.display_info()
 print()
-book1.get_year()
-book2.get_year()
-print("SETTERS")
-# Setters
-book1.set_title("Super Book")
-book1.get_title()
+car3.get_brand()
+car3.get_model()
+car3.get_price()
+car3.get_year()
+car3.display_info()
 
 
 
