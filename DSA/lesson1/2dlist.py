@@ -106,5 +106,6 @@ tic_tac_toe_board = [
     ["X", "O", "X"]
 ]
 print("\nTic-Tac-Toe Board:")
+
 for row in tic_tac_toe_board:
     print(row)
