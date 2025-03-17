@@ -1,74 +1,50 @@
-class Car:
-    def __init__(self, brand, model, year, price):
-        # Setting attributes
-        self.brand = brand
-        self.model = model
-        self.year = year
-        self.price = price
-    # Getters
-    def get_brand(self):
-        print(f"Car Brand: {self.brand}")
+class Patient:
+    def __init__(self, name, age, patient_id, disease):
+        self.name = name
+        self.age = age
+        self.patient_id = patient_id
+        self.disease = disease
 
-    def get_model(self):
-        print(f"Car Model: {self.model}")
+    # Getter methods
+    def get_name(self):
+        return self.name
 
-    def get_year(self):
-        print(f"Year: {self.year}")
+    def get_age(self):
+        return self.age
 
-    def get_price(self):
-        print(f"Car Price: {self.price}")
+    def get_patient_id(self):
+        return self.patient_id
 
+    def get_disease(self):
+        return self.disease
+
+    # Setter method
+    def set_disease(self, new_disease):
+        self.disease = new_disease
+
+    # Method to check if patient is a senior citizen
+    def is_senior(self):
+        return self.age >= 65
+
+    # Method to display patient details
     def display_info(self):
-        print(f"Car brand : {self.brand} the model of this car was {self.model} price will be {self.price} and created in year {self.year}")
-
-# Creating objects
-car1 = Car("Toyota", "Vios", 2003, "1.5M")
-car2 = Car("Supra", "Mk5", 2010, "10.5M")
-car3 = Car("Nissan", "GTR Skyline", 2005, "25M")
-
-car1.get_brand()
-car1.get_model()
-car1.get_price()
-car1.get_year()
-car1.display_info()
-print()
-car2.get_brand()
-car2.get_model()
-car2.get_price()
-car2.get_year()
-car2.display_info()
-print()
-car3.get_brand()
-car3.get_model()
-car3.get_price()
-car3.get_year()
-car3.display_info()
+        print(f"Patient Name: {self.name}, Age: {self.age}, ID: {self.patient_id}, Disease: {self.disease}")
 
 
+# Creating patient objects
+patient1 = Patient("Alice", 70, 101, "Diabetes")
+patient2 = Patient("Bob", 45, 102, "Flu")
+patient3 = Patient("Charlie", 67, 103, "Heart Disease")
 
-# Tommorow
-# CAñAS, JUSTIN CEDRIC
-# TAN, CJ
-# ECDANG, CITO JOHN
-# CARTAJENAS, JHOPERSIE
-# MANLEGRO, MARK DALE
-# FLORIDA, KIROU
-# ALEGRADO, VENZ CARLO
-# BUGAS, GWENA
-# CABASAN, ALDRIN
-# ASISTER, MELCHIE
-# ALAMAG, LJ MAE
-# ENOMAR, CAMILE
+# Displaying details
+patient1.display_info()
+patient2.display_info()
+patient3.display_info()
 
-# Friday
-# PAMA, CHARLENE
-# ABELILLA, DARYN RHAEL
-# PENOLIAD, MARVIE JR.
-# CODANTE, AMINODEN kyuttie
-# CALIAO, KHALEL JHON
-# TAYROS, DANMER
-# ARMADA, MARK DANIEL
-# MANCAO, AILYN
-# LAPITAN, KIERTENE FAITH
-# MATIN-AO, REYGIE
-# BAOY, JAMES BRYAN
+# Modifying disease
+patient2.set_disease("Pneumonia")
+
+# Checking senior status
+print(f"Is {patient1.get_name()} a senior? {patient1.is_senior()}")  # Output: True
+print(f"Is {patient2.get_name()} a senior? {patient2.is_senior()}")  # Output: False
+print(f"Is {patient3.get_name()} a senior? {patient3.is_senior()}")  # Output: True
