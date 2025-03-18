@@ -95,3 +95,16 @@
   ?>
 </body>
 </html>
+
+<p>
+    
+INSTRUCTIONS
+1. If you are using ONLINE PYTHON COMPILER open only 1 tab
+
+2. Cellphone at the top of your keyboard near in the monitor
+
+3.Checking @ 11:50 
+
+
+</p>
+

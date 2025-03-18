@@ -40,7 +40,13 @@ patient3 = Patient("Charlie", 67, 103, "Heart Disease")
 patient1.display_info()
 patient2.display_info()
 patient3.display_info()
-
+print()
+print()
+print()
+print(patient1.get_name())
+print()
+print()
+print()
 # Modifying disease
 patient2.set_disease("Pneumonia")
 
