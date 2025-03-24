@@ -1,85 +1,48 @@
-class Patient:
-    def __init__(self, name, age, patient_id, disease):
-        self.name = name #Stored object called name
-        self.age = age #Stored object called age
-        self.patient_id = patient_id #Stored object called patient_id
-        self.disease = disease #Stored object called disease
+# Creating a  class called car
+class Car:
+    # Initialization with the car attributes
+    def __init__(self, brand, model, year, price):
+        self.brand  = brand
+        self.model  = model
+        self.year  = year
+        self.price  = price
 
     # Getters
-    def get_name(self):
-        return self.name # John
-    def get_age(self):
-        return self.age # 29
-    def get_patient_id(self):
-        return self.patient_id #111
-    def get_disease(self):
-        return self.disease #Heartache
+    def get_brand(self):
+        return self.brand
+
+    def get_model(self):
+        return self.model
+
+    def get_year(self):
+        return self.year
+
+    def get_price(self):
+        return self.price
     
     # Setters
-    def set_disease(self, new_disease):
-        self.disease = new_disease
-    
-# Creating 3 objects
-p1 = Patient("John", 29, 111, "Heartache")
-p2 = Patient("Jane", 65, 112, "Cough")
-p3 = Patient("Jessy", 20, 113, "Kalibanga")
+    def set_price(self, new_price):
+        self.price = new_price
 
-print("Name: ", p1.get_name())
-print("Age: ", p1.get_age())
-print("Patient Id: ",p1.get_patient_id())
-print("Disease: ", p1.get_disease())
-print() #Generate new line
-print("Name: ", p2.get_name())
-print("Age: ", p2.get_age())
-print("Patient Id: ",p2.get_patient_id())
-print("Disease: ", p2.get_disease())
-print() #Generate new line
- # Used the setters(update)
-print("Name: ", p3.get_name())
-print("Age: ", p3.get_age())
-print("Patient Id: ",p3.get_patient_id())
-print("Disease: ", p3.get_disease())
-p3.set_disease("Hubak")
+    def display_info(self):
+        print(f"Car brand: {self.brand} model was {self.model} year invented {self.year} with the price of {self.price} ")
 
-class Patient:
-    def __init__(self, name, age, patient_id, disease):
-        self.name = name #Stored object called name
-        self.age = age #Stored object called age
-        self.patient_id = patient_id #Stored object called patient_id
-        self.disease = disease #Stored object called disease
+    def is_affordable(self, budget):
+        return self.price <= budget
 
-    # Getters
-    def get_name(self):
-        return self.name # John
-    def get_age(self):
-        return self.age # 29
-    def get_patient_id(self):
-        return self.patient_id #111
-    def get_disease(self):
-        return self.disease #Heartache
-    
-    # Setters
-    def set_disease(self, new_disease):
-        self.disease = new_disease
-    
-# Creating 3 objects
-p1 = Patient("John", 29, 111, "Heartache")
-p2 = Patient("Jane", 65, 112, "Cough")
-p3 = Patient("Jessy", 20, 113, "Kalibanga")
+# Create and update objects
+car1 = Car("Toyota","Fortuner", 2001, 200)
+car2 = Car("Misyubibi","Sample", 2001, 600)
+car3 = Car("Toyota","Vios", 2001, 500)
 
-print("Name: ", p1.get_name())
-print("Age: ", p1.get_age())
-print("Patient Id: ",p1.get_patient_id())
-print("Disease: ", p1.get_disease())
-print() #Generate new line
-print("Name: ", p2.get_name())
-print("Age: ", p2.get_age())
-print("Patient Id: ",p2.get_patient_id())
-print("Disease: ", p2.get_disease())
-print() #Generate new line
- # Used the setters(update)
-print("Name: ", p3.get_name())
-print("Age: ", p3.get_age())
-print("Patient Id: ",p3.get_patient_id())
-print("Disease: ", p3.get_disease())
-p3.set_disease("Hubak")
+car2.set_price(400)
+
+print(f"Can afford {car2.get_brand()}? {car2.is_affordable(300)}")
+
+
+
+
+list - insert, remove, find  or search  - 2d List
+function 
+Class
+

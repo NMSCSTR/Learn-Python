@@ -5,7 +5,7 @@ class Student {
     // Constructor
     public Student(String name, int age) {
         this.name = name;
-        setAge(age);  // Using setter to validate age
+        setAge(age);  
     }
 
     // Getter method for name
