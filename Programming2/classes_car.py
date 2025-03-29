@@ -41,8 +41,3 @@ print(f"Can afford {car2.get_brand()}? {car2.is_affordable(300)}")
 
 
 
-
-list - insert, remove, find  or search  - 2d List
-function 
-Class
-
