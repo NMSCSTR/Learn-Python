@@ -14,7 +14,7 @@ greet()
 def list_student(name = "John"):
     print("Hello, ", name)
 list_student() # Call the function
-list_student("nfdsjfbs")
+list_student("Michelle")
 
 # Functions With Return Values
 # Recursive function
