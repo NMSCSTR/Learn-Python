@@ -44,6 +44,7 @@ public class EncapsulationExample {
     public static void main(String[] args) {
         // Creating an object of Student
         Student s1 = new Student("Alice", 20);
+        
 
         // Accessing private data using getter methods
         System.out.println("Student Name: " + s1.getName());
