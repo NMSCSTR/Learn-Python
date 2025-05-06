@@ -1,15 +1,13 @@
-
-
-class Student {
+class Person {
     // Private variables (Data hiding)
-    public String name;
+    private String name;
     private int age;
     // Public constructor
-    public Student(String name, int age){
+    public Person(String name, int age){
         this.name = name;
-        this.age =age;
+        this.age = age;
     }
-    // Getter method for name'
+    // Getter method for name
     public String getName(){
         return name;
     }
@@ -23,31 +21,34 @@ class Student {
     }
     // Setter method for age with validation
     public void setAge(int age){
-        if(this.age > 0){
+        if (age >= 0) {
             this.age = age;
         }else{
-            System.out.println("Enter a valid age!");
+            System.out.println("Age must be positive!");
         }
     }
     // Display method
     public void displayInfo(){
-        System.out.println("Student name: " + name + " " + age + " years old!");
+        System.out.println("Person name: " + name + " " + age + " years old!");
     }
 }
 
 // Main Class
 public class EncapsulationExample {
     public static void main(String[] args) {
-        // Creating an object of Student
-        Student s1 = new Student("John",19);
-        Student s2 = new Student("Lando",23);
+        // Creating an object of Person
+        Person p1 = new Person("Rhondel", 20);
+        Person p2 = new Person("John", 21);
         // Accessing private data using getter methods
-        
-        System.out.println(s1.name);
-        System.out.println(s2.name);
+        System.out.println("Name: " + p1.getName());
+        System.out.println("Name: " + p2.getName());
+        System.out.println("Age: " + p1.getAge());
+        System.out.println("Age: " + p2.getAge());
         // Updating private data using setter methods
+        p1.setAge(26);
+        System.out.println("Update age: " + p1.getAge());
         // Display updated information
-
-        s1.displayInfo();
+        p1.displayInfo();
+        p2.displayInfo();
     }
 }
