@@ -1,10 +1,13 @@
+
 class Node:
     def __init__(self, data):
-        self.data = data 
+        self.data = data
         self.next = None
+
 class LinkedList:
     def __init__(self):
-        self.head = None 
+        self.head = None
+
     def append(self, data):
         new_node = Node(data)
 
@@ -16,21 +19,22 @@ class LinkedList:
                 current = current.next
             current.next = new_node
 
+    # Method to delete the last node in the linked list
     def delete(self):
+        # If the list is empty, just print a message
         if not self.head:
             print("List is empty")
+        # If there's only one node, remove it by setting head to None
         elif not self.head.next:
-            # Only one node in the list
             self.head = None
         else:
+            # Traverse the list to find the second last node
             current = self.head
+            # Stop when current.next.next is None, meaning current is second last
             while current.next.next:
                 current = current.next
-            # Remove reference to the last node
+            # Remove the last node by setting second last node's next to None
             current.next = None
-
-
-
 
     def display(self):
         current = self.head
@@ -38,11 +42,15 @@ class LinkedList:
             print(current.data, end=' -> ')
             current = current.next
         print("None")
-        
-ll = LinkedList()
-ll.append(10)
-ll.append(20)
-ll.append(30)
-ll.append(40)
-ll.display()
 
+ll = LinkedList()
+
+# Append values to the list
+ll.append(10)   # List: 10
+ll.append(20)   # List: 10 -> 20
+ll.append(30)   # List: 10 -> 20 -> 30
+ll.append(40)   # List: 10 -> 20 -> 30 -> 40
+ll.delete()
+
+# Display the current list
+ll.display()     # Output: 10 -> 20 -> 30 -> 40 -> None
