@@ -16,6 +16,22 @@ class LinkedList:
                 current = current.next
             current.next = new_node
 
+    def delete(self):
+        if not self.head:
+            print("List is empty")
+        elif not self.head.next:
+            # Only one node in the list
+            self.head = None
+        else:
+            current = self.head
+            while current.next.next:
+                current = current.next
+            # Remove reference to the last node
+            current.next = None
+
+
+
+
     def display(self):
         current = self.head
         while current:

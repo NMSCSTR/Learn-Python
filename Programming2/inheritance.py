@@ -1,12 +1,12 @@
 class Candidate:
     def __init__(self, name, age, position):
-        self.name = name #BBM
+        self.name = name #Digong
         self.age = age #56
         self.position = position #Mayor
 
-    def introduce(self): #BBM       #56
+    def introduce(self): #Digong       #56
         print(f"I am {self.name}, {self.age} years old, running for {self.position}")
-        #Mayor
+                                                                        #Mayor
     
 # Sub Class(child) 
 class MayorCandidate(Candidate):
