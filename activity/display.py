@@ -26,7 +26,7 @@ class LinkedList:
         elif not self.head.next:
             self.head = None
         else:
-            current = self.head #10
+            current = self.head
             while current.next.next:
                 current = current.next
             current.next = None
