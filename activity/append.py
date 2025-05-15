@@ -8,6 +8,18 @@ class LinkedList:
     def __init__(self):
         self.head = None
 
+    def append(self, data):
+        new_node = Node(data)
+
+        if not self.head:
+            self.head = new_node
+        else:
+            current = self.head
+            while current.next:
+                current = current.next
+            current.next = new_node
+    
+    
 
     
 
@@ -19,14 +31,8 @@ class LinkedList:
             current = current.next
         print("None")
 
-ll = LinkedList() #Intance
+ll = LinkedList() 
 
-# Append values to the list
-ll.append(10)   # List: 10
-ll.append(20)   # List: 10 -> 20
-ll.append(30)   # List: 10 -> 20 -> 30
-ll.append(40)   # List: 10 -> 20 -> 30 -> 40
-ll.delete()
 
-# Display the current list
-ll.display()     # Output: 10 -> 20 -> 30 -> 40 -> None
+
+ll.display()     

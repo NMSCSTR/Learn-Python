@@ -8,16 +8,6 @@ class LinkedList:
     def __init__(self):
         self.head = None
 
-    def append(self, data):
-        new_node = Node(data)
-
-        if not self.head:
-            self.head = new_node #10
-        else:
-            current = self.head #10 #20
-            while current.next:
-                current = current.next #None
-            current.next = new_node #20
 
 
 
@@ -35,6 +25,6 @@ ll.append(10)
 ll.append(20)  
 ll.append(30)  
 ll.append(40) 
-ll.delete()
+
 
 ll.display()

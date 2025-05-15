@@ -12,7 +12,7 @@ class Cat(Animal):
 
 def make_sound(animal):
     animal.speak()
-# Intantiate
+
 dog = Dog()
 cat = Cat()
 
