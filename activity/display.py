@@ -34,7 +34,6 @@ class LinkedList:
             
 
 
-
 ll = LinkedList() 
 
 # Append values to the list
@@ -42,5 +41,4 @@ ll.append(10)
 ll.append(20)   
 ll.append(30)   
 ll.append(40)   
-
-
+ll.display()
