@@ -47,3 +47,42 @@ ll.append(40)   # List: 10 -> 20 -> 30 -> 40
 ll.delete()
 # Display the current list
 ll.display()     # Output: 10 -> 20 -> 30 -> 40 -> None
+
+
+
+    public function calculatePremium($targetFutureValue, $annualInterestRate, $paymentMonths, $growthYears, $paymentMode)
+    {
+
+        $monthlyInterestRate    = $annualInterestRate / 12;
+        $quarterlyInterestRate  = $annualInterestRate / 4;
+        $semiAnnualInterestRate = $annualInterestRate / 2;
+
+        switch ($paymentMode) {
+            case "monthly":
+                $compoundingFactor = pow(1 + $monthlyInterestRate, $paymentMonths) - 1;
+                $compoundedGrowth  = pow(1 + $annualInterestRate, $growthYears);
+                break;
+            case "quarterly":
+                $compoundingFactor = pow(1 + $quarterlyInterestRate, $paymentMonths / 3) - 1;
+                $compoundedGrowth  = pow(1 + $annualInterestRate, $growthYears);
+                break;
+            case "semi-annually":
+                $compoundingFactor = pow(1 + $semiAnnualInterestRate, $paymentMonths / 6) - 1;
+                $compoundedGrowth  = pow(1 + $annualInterestRate, $growthYears);
+                break;
+            default:
+                return "Invalid Payment Mode";
+        }
+
+        $requiredSavings = $targetFutureValue / $compoundedGrowth;
+
+        if ($compoundingFactor == 0) {
+            return "Invalid calculation parameters.";
+        }
+
+        $requiredSavingsPerPeriod = $requiredSavings * $monthlyInterestRate / $compoundingFactor;
+
+        $requiredMonthlyPremium = $requiredSavingsPerPeriod / 0.85;
+
+        return number_format($requiredMonthlyPremium, 2);
+    }

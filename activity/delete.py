@@ -23,17 +23,6 @@ class LinkedList:
             current.next = new_node
 
 
-    def delete(self):
-        if not self.head:
-            print("List is Empty")
-        elif not self.head.next:
-            self.head = None
-        else:
-            current = self.head
-            while current.next.next:
-                current = current.next
-            current.next = None
-
             
     def display(self):
         current = self.head
@@ -48,6 +37,6 @@ ll.append(10)
 ll.append(20)  
 ll.append(30)  
 ll.append(40) 
-ll.delete()
+
 
 ll.display()
