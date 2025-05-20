@@ -1,50 +1,51 @@
+class Animal:
+    def __init__(self, name):
+        self.__name = name
 
-class Node:
-    def __init__(self, data):
-        self.data = data
-        self.next = None
+    def get_name(self):
+        return self.__name
 
-class LinkedList:
-    def __init__(self):
-        self.head = None
+    def set_name(self, new_name):
+        self.__name = new_name
 
-    def append(self, data):
-        new_node = Node(data)
+    def make_sound(self):
+        print("Some animal sound")
 
-        if not self.head:
-            self.head = new_node 
-        else:
-            current = self.head
-            while current.next:
-                current = current.next 
-            current.next = new_node 
+class Dog(Animal):
+    def __init__(self, name, breed):
+        super().__init__(name)
+        self.breed = breed
 
-    # Method to delete the last node in the linked list
-    def delete(self):
-        if not self.head:
-            print("List is empty!")
-        elif not self.head.next:
-            self.head = None
-        else:
-            current = self.head 
-            while current.next.next:
-                current = current.next
-            current.next = None
+    def make_sound(self):
+        print("Woof!")
 
-            
-    def display(self):
-        current = self.head
-        while current:
-            print(current.data, end=' -> ')
-            current.next = current
-        print("None")
+    def display_info(self):
+        print(f"Name: {self.get_name()}, Breed: {self.breed}")
 
-ll = LinkedList() 
+class Cat(Animal):
+    def __init__(self, name, color):
+        super().__init__(name)
+        self.color = color
 
-ll.append(10)   
-ll.append(20)  
-ll.append(30)   
-ll.append(40)  
-ll.delete()
+    def make_sound(self):
+        print("Meow!")
 
-ll.display()     
+    def display_info(self):
+        print(f"Name: {self.get_name()}, Color: {self.color}")
+
+animal = Animal("Generic Animal")
+dog = Dog("Buddy", "Golden Retriever")
+cat = Cat("Whiskers", "Tabby")
+
+print(f"Dog's name (inherited): {dog.get_name()}")
+print(f"Cat's name (inherited): {cat.get_name()}")
+
+animal.make_sound()
+dog.make_sound()
+cat.make_sound()
+
+animal.set_name("Generic New Animal")
+print(f"Animal's new name: {animal.get_name()}")
+
+dog.display_info()
+cat.display_info()
