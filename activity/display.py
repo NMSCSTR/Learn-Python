@@ -31,13 +31,8 @@ class LinkedList:
                 current = current.next
             current.next = None
 
-    def display(self):
-        current = self.head
-        while current:
-            print(current.data, end = " -> ")
-            current = current.next
-        print("None")
 
+    
 ll = LinkedList() 
 
 # Append values to the list

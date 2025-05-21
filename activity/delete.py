@@ -22,9 +22,11 @@ class LinkedList:
                 current = current.next
             current.next = new_node
 
-    def delete(self):
+
+
+    def delete(self): 
         if not self.head:
-            print("list is empty!")
+            print("List is Empty!")
         elif not self.head.next:
             self.head = None
         else:
@@ -32,6 +34,9 @@ class LinkedList:
             while current.next.next:
                 current = current.next
             current.next = None
+
+            
+
             
     def display(self):
         current = self.head
