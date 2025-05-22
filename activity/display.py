@@ -31,8 +31,9 @@ class LinkedList:
                 current = current.next
             current.next = None
 
-
     
+
+
 ll = LinkedList() 
 
 # Append values to the list

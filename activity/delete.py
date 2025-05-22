@@ -22,19 +22,10 @@ class LinkedList:
                 current = current.next
             current.next = new_node
 
+    
+            
 
-
-    def delete(self): 
-        if not self.head:
-            print("List is Empty!")
-        elif not self.head.next:
-            self.head = None
-        else:
-            current = self.head
-            while current.next.next:
-                current = current.next
-            current.next = None
-
+    
             
 
             
