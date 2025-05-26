@@ -22,8 +22,7 @@ def bubble_sort_trace(arr):
             print("  Array after this pass:", arr)
     print("\nSorted array:", arr)
     
-if __name__ == "__main__":
-    data = [64, 34, 25, 12, 22, 11, 90]
-    bubble_sort_trace(data)
+data = [64, 34, 25, 12, 22, 11, 90]
+bubble_sort_trace(data)
 
 
